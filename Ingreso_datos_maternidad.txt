@@ -1,0 +1,156 @@
+---------------------------------   1  ------------------------------------------------------------------------------------------------------------------ 
+--TABLA ADMINISTRATIVO
+INSERT INTO administrativo (id_admin, cedula_admin, nombre_admin, apellido_admin, direccion_admin, correo_admin, telefono_admin, profesion_admin)
+							('1111136182','1311566995','Guadalupe','Macias','Barrio San Antonio','guadalupe@adrministracion.com','0956593331','Secretaria');
+							('1111158693','1351156852','José','Lopez','Av. 19 y calle 15','jose@administracion.com','0988824482','Secretario');
+							('1111148369','135698726','Virginia','Torres','Ciudad Jardin','virginia@administracion.com','0982146278','Secretaria');
+							('1111196347','1318947630','Karla','Saltos','Santa Martha calle 8 de Noviembre','karlas@administracion.com','0979794324','Secretaria');
+							('1111125472','1313278010','Genesis','Palacios','25 de diciembre','genesis@administracion.com','0959219280','Secretaria');
+							('1111148536','1311566995','Marcos','Panta','calle las mercedes','marcos@administracion.com','0963158693','Secretario');
+							('1111122875','1351430747','Fabiola','Rosado','Avenida Carlos Alberto Aray','fabiola@administracion.com','0959417338','Secretaria');
+-----------------------------------  2   ------------------------------------------------------------------------------------------------------------------
+--TABLA MEDICO
+INSERT INTO medico (id_medi, cedula_medi, nombre_medi, apellido_medi, direccion_medi, correo_medi, telefono_medi, especialidad)
+			('333335620','1354857965','Alfredo','Carreño','Tarqui','alfredo@maternidadalfonso.ec','0960745896','Pediatra');
+			('333331246','1351430747','Gilsson','Moran','Ciudadela 30 de Marzo','jaime@maternidadalfonso.com','0968672673','Pediatra');
+			('333336898','1312818131','Eliana','Mendoza','Sitio punta y filo parroquia San Antonio','eliana@maternidadalfonso.com','0958840918','Pediatra');
+			('333334542','1314023993','Jhon','Mera','Av. Luis Naveda','jhon@maternidadalfonso.com','0960133445','Pediatra');
+			('333332267','1314194703','Diana','Roca','Ciudadela 6 de Diciembre ','diana@maternidadalfonso.com','0992088256','Pediatra');
+			('333335541','1314680453','Jonathan','Toala','Ciudadela "La Pega"','jonathan@maternidadalfonso.com','0985703272','Pediatra');
+			('333334674','1316490034','Moreira','Parroquia San Antonio Sitio La Raya','gema@maternidadalfonso.com','0997344160','Pediatra');
+			('333336121','1312314022','Jorge','Quijije','Ciudadela 9 de octubre','jorge@maternidadalfonso.com','0992088256','Pediatra');
+			('333336412','1351666472','Steven','Rivera','San Lorenzo vía eloy Alfaro','steven@maternidadalfonso.com','0995314435','Pediatra');
+-------------------------------------  3   -------------------------------------------------------------------------------------------------------------
+--TABLA PARTO
+INSERT INTO parto (id_part, id_lim, id_medi, id_mante, id_madre, obstreta_part, pediatra_part, neonatologo_part, cantidad_de_part, fecha_de_part, sexoneonato_part, pesoneonato_part, novedad_part)
+VALUES ('666668912','444445639','333335620','555556985','222225555','Thiago Francisco','Alfredo Carreño','Alberto Paez','1','19/11/2021','M','2 Kg','Proceso con éxito pasa a la sala Maternidad');
+('666666188','444442156','333331246','555552884','222226314','Nedyi Salazar','Gilsson Mora','Luz Cedeño','1','15/11/2021','M','2 Kg','Neonato pasa a sala');
+('666667479','444443689','333336898','555551735','222221498','Genny Alay','Steven Rivera','Camila Chica','1','16/3/2020','M','2 Kg','Neonato pasa a sala');
+('666665885','444440633','333334542','555554798','222224786','Irina Pinargote','Jorge Quijije','Mauel Figueroa','1','22/11/2020','F','3 Kg','Neonato pasa a sala');
+-------------------------------------   4  -------------------------------------------------------------------------------------------------------------
+--TABLA LIMPIEZA
+INSERT INTO limpieza (id_lim, cedula_lim, nombre_lim, apellido_lim, direccion_lim, correo_lim, telefono_lim, area_lim, especialidad_lim)
+('444445639','1367855396','Luis','Sanchez','El Porvenir','luis.sanchez@servicios.ec','0962457436','Quirofano','electricista');
+('444442156','1398284980','Ruben','Loor','Clubs de Leones Ciudadela Costa norte','ruben.loor@servicios.ec','0981261894','Incubacion','Limpieza');
+('444442156','1311489985','Daniel','Flores','7 de Agosto y Juan Montalvo','daniel.flores@servicios.ec','0989701316','Marternidad','Limpieza');
+('444440633','1355899988','Eduardo','Cortez','Calle Pichincha','eduardo.cortez@servicios.ec','0993627565','Quirofano','electricista');
+-------------------------------------   5   ------------------------------------------------------------------------------------------------------------
+--TABLA MANTENIMIENTO
+INSERT INTO mantenimiento (id_mante, nombre_mant, apellido_mant, equipoutilizado_mant, reparacion_mat, fecha_mant)
+('555556985','Javier','Santana','Soldadura','Camilla','15/11/2021');
+('555552884','Miguel','Lucas','Escalera y cables','Cambios de focos','15/11/2021');
+('555551735','Sebastian','Delgado','Escalera y cables','Cambios de focos','15/11/2021');
+('555554798','Jorge','Loor','Escalera y cables','Cambios de focos','26/11/2021');
+--------------------------------------   6   -----------------------------------------------------------------------------------------------------------
+--TABLA AGENDAMIENTO
+INSERT INTO agendamiento (fechacita_agen, id_admin, fechainicio_agen, fechaagenda_agen, hora_agen, doctor_agen, agendarealizada_agen, agendacancelada_agen)
+('10/3/2020','1111136182','2/3/2020','10/3/2020','14:00:00','Gilsson Mora','Si','No');
+('20/11/2020','1111158693','6/11/2020','20/11/2020','13:00:00','Steven Rivera','Si','No');
+('25/5/2021','1111148369','22/5/2021','25/5/2021','11:00:00','Jorge Quijije','Si','No');
+('10/11/2021','1111196347','11-09-2021','10/11/2021','12:00:00','Angel Plua','Si','No');
+---------------------------------------   7   ----------------------------------------------------------------------------------------------------------
+--TABLA DETALLECITA
+INSERT INTO detallecita (fecha_cita, id_medi, id_madre, prescripcion_cita)
+						('11/11/2021','333335620','222225555','Revision de embarazo');
+						('11/02/2019','333331246','222226314','Revision de embarazo');
+						('10/03/2019','333331246','222226314','Revision de embarazo');
+						('10/03/2019','333331246','222226314','Revision de embarazo');
+						('20/11/2020','333336898','222221498','Revision de embarazo');
+						('25/5/2021','33334542','222224786','Revision de embarazo');
+---------------------------------------   8   ----------------------------------------------------------------------------------------------------------
+--TABLA MADRE
+INSERT INTO madre ( id_madre, id_admin, cedula_madre, nombre_madre, apellido_madre, nacionalidad_madre, tiposangre_madre, fechanacimiento_madre, correo_madre, telefono1_madre, telefono2_madre, direccion_madre)
+('222225555','1111136182','1354029656','Fernanda','Caicedo','Ecuatoriana','O+','1/1/1982','fernanda.caicedeo1982@gmail.com','0965126975','0963547958','La pradera');
+('222226314','1111158693','1351005804','Romina','Duque','Ecuatoriana','O+','1/1/1982','romanina.duque1990@gmail.com','0969976489','0978891693','Via San Mateo');
+('222221498','1111148369','1351740848','Milena','Delgado','Ecuatoriana','O+','25/6/1990','milena.delgado1999@gmail.com','0983921385','0959879784','Calle García Moreno y Manabí');
+('222224786','1111196347','1316619897','Wendy','Chavez','Ecuatoriana','O+','25/6/1990','wendy.chavez2001@gmail.com','0982712889','0978725663','Leonidas plaza fanca 4');
+---------------------------------------   9   ----------------------------------------------------------------------------------------------------------
+--TABLA EXAMENES
+INSERT INTO examenes (fecha_exam, fecha_cita, Descripcion_exam)
+('2020-03-11','2020-03-10','examenes completos');
+('2020-11-22','2020-11-20','examenes completos');
+('2021-05-26','2021-05-25','examenes completos');
+('2021-11-12','2021-11-11','examenes completos');
+---------------------------------------   10   ----------------------------------------------------------------------------------------------------------
+--TABLA EXAMENESTIPO
+INSERT INTO examenestipo (fecha_exam, id_tipo, resultado_exam)
+('2020-03-11','00001','Triglicéridos 40-170 mg/dl');                                                                                     
+('2020-03-11','00002','Adultos	1,001 -1,035');
+('2020-03-11','00003','Urobilinógeno 40–280 mg/24 h 68–473 mcmol/24 h');
+('2020-03-11','00004','Ultrasonido normal');
+('2020-11-22','00001','Triglicéridos 40-170 mg/dl'); 
+('2020-11-22','00002','Adultos	1,001 -1,035');
+('2020-11-22','00003','Urobilinógeno 40–280 mg/24 h 68–473 mcmol/24 h');
+('2020-11-22','00004','Ultrasonido normal');
+('2021-05-26','00001','Triglicéridos 40-170 mg/dl'); 
+('2021-05-26','00002','Adultos	1,001 -1,035');
+('2021-05-26','00003','Urobilinógeno 40–280 mg/24 h 68–473 mcmol/24 h');
+('2021-05-26','00004','Ultrasonido normal');
+('2021-11-12','00001','Triglicéridos 40-170 mg/dl'); 
+('2021-11-12','00002','Adultos	1,001 -1,035');
+('2021-11-12','00003','Urobilinógeno 40–280 mg/24 h 68–473 mcmol/24 h');
+('2021-11-12','00004','Ultrasonido normal');
+---------------------------------------   11   ----------------------------------------------------------------------------------------------------------
+--TABLA INCUBACION
+INSERT INTO incubacion (id_incub, id_lim, id_mante, fechaingreso_incu, condiciones_incu, visitas_incu, tratamiento_incu)
+('777772171','444440633','555554798','2020-11-22','Neonato se mantiene en estado delicado son vigilancia medica','Gilsson Mora','Se determina tratamiento de oxigeno');                                                                                           
+('777773554','444442156','555552884','2021-11-15','Neonato se mantiene en estado delicado son vigilancia medica','Alfredo Carreño','Se determina tratamiento de oxigeno');                                                                                                                         
+---------------------------------------   12   ----------------------------------------------------------------------------------------------------------
+--TABLA MANDA A REALIZAR
+INSERT INTO manda_a_realizar(fecha_exam, id_medi)
+							('2020-03-11','333331246');
+							('2020-11-22','333336898');
+							('2021-05-26','333334542');
+							('2021-11-12','333335620');
+							
+---------------------------------------   13   ----------------------------------------------------------------------------------------------------------
+--TABLA SALA MATERNIDAD
+INSERT INTO salamaternidad (id_manter, id_lim, id_mante, condiciones_manter, visitas_manter, prescripcion_manter)
+('888884133','444445639','555556985','Neonato en perfectas condiciones','Alfredo Carreño','Neonato se encuentra en buenas condiciones se procede a dar de lactar por parte de su madre');
+('888886994','444443689','555551735','Neonato en perfectas condiciones','Gilsson Mora ','Neonato se encuentra en buenas condiciones se procede a dar de lactar por parte de su madre');
+---------------------------------------   14   ----------------------------------------------------------------------------------------------------------
+--TABLA SE REUNE MADRE Y DOCTOR
+INSERT INTO se_reune_madre_y_doctor (fechacita_agen, id_madre)
+									('2020-03-10','222225555');
+									('2020-11-20','222226314');
+									('2021-05-25','222221498');
+									('2021-11-10','222224786');	
+---------------------------------------   15   ----------------------------------------------------------------------------------------------------------
+--TABLA TIPO
+INSERT INTO tipo (id_tipo, nombretipo)
+				('00001','Examen de sangre');
+				('00002','Examen de orina');
+				('00003','Examen de heces');
+				('00004','Ecografia');	
+---------------------------------------   16   ----------------------------------------------------------------------------------------------------------
+--TABLA TRANSLADO A INCUBACION
+INSERT INTO transalado_a_incubacion (id_part, id_incub)
+									('666665885','777772171');
+									('666666188','777773554');	
+---------------------------------------   17   ----------------------------------------------------------------------------------------------------------
+--TABLA TRANSLADO A SALAMATERNIDAD
+INSERT INTO translado_a_salamaternidad (id_mater, id_part, fechaingreso_mater)
+										('888884133','666665885','2021-11-19');
+										('888884133','666666188','2021-11-19');
+										('888884133','666667479','2021-11-19');
+										('888886994','666665885','2021-11-19');	
+---------------------------------------   18   ----------------------------------------------------------------------------------------------------------
+--TABLA QUIROFANO
+INSERT INTO quirofano (id_quirof, id_part, temperatura_quirof, humedad_quirof, nivelruido_quirof , filtrado_quirof, condicion_quirof)
+('999990441','666667479','21˚C (‐1˚C y +3˚C)','50% ±10%','40 dB','Filtro final en el recinto de quirófano H‐14 U15','Sala de quirofano en perfecto estado');
+('999993451','666668912','21˚C (‐1˚C y +3˚C)','50% ±10%','40 dB','Filtro final en el recinto de quirófano H‐14 U15','Sala de quirofano en perfecto estado');
+('999996321','666666188','21˚C (‐1˚C y +3˚C)','50% ±10%','40 dB','Filtro final en el recinto de quirófano H‐14 U15','Sala de quirofano en perfecto estado');
+---------------------------------------   19   ----------------------------------------------------------------------------------------------------------
+--TABLA PIDE
+INSERT INTO pide (id_medi, fecha_insu)
+				('333331246','2021-11-15');
+				('333334542','2020-11-22');
+				('333335620','2021-11-19');
+				('333336898','2020-03-16');
+---------------------------------------   20   ----------------------------------------------------------------------------------------------------------
+--TABLA INSUMO
+INSERT INTO insumo (fecha_insu, fecha_cita, ropaqirurgica_insu, materialpresionarterial_insu, instrumentquirurgica_insu, materialbioseguridad_insu)
+('0202-03-16','2020-11-20','Bata estéril tela no tejida SMS 35gr.(100% polipropileno)DCE-003','Brazalete para monitor de presion arterial, una via, tamaño neonatal, N. 3','Ventosa obstétrica+Fórceps+Espátulas de Thierry','Alcohol etilico desnaturalizado, 70 grados, envase de un litro +solucion de gluconato de clorhexadina al 5% envase de un litro+Mascarilla');
+('2020-11-22','2021-05-25','Bata estéril tela no tejida SMS 35gr.(100% polipropileno)DCE-003','Brazalete para monitor de presion arterial, una via, tamaño neonatal, N. 3','Ventosa obstétrica+Fórceps+Espátulas de Thierry','Alcohol etilico desnaturalizado, 70 grados, envase de un litro +solucion de gluconato de clorhexadina al 5% envase de un litro+Mascarilla');
+('2021-11-15','2020-03-10','Bata estéril tela no tejida SMS 35gr.(100% polipropileno)DCE-003','Brazalete para monitor de presion arterial, una via, tamaño neonatal, N. 3','Ventosa obstétrica+Fórceps+Espátulas de Thierry','Alcohol etilico desnaturalizado, 70 grados, envase de un litro +solucion de gluconato de clorhexadina al 5% envase de un litro+Mascarilla');
+('2021-11-19','2021-11-11','Bata estéril tela no tejida SMS 35gr.(100% polipropileno)DCE-003','Brazalete para monitor de presion arterial, una via, tamaño neonatal, N. 3','Ventosa obstétrica+Fórceps+Espátulas de Thierry','Alcohol etilico desnaturalizado, 70 grados, envase de un litro +solucion de gluconato de clorhexadina al 5% envase de un litro+Mascarilla');
